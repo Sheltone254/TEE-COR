@@ -53,12 +53,31 @@
     <!-- CONTACT SECTION -->
     <section>
         <h2>Book a Session</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Tell us about your project..." required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <form action="https://formspree.io/f/xvgwzppw" method="POST">
+  <label>
+    Your Name:
+    <input type="text" name="name" required>
+  </label>
+  <br><br>
+
+  <label>
+    Your Email:
+    <input type="email" name="email" required>
+  </label>
+  <br><br>
+
+  <label>
+    Message:
+    <textarea name="message" required></textarea>
+  </label>
+  <br><br>
+
+  <!-- Hidden field for redirect (optional) -->
+  <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
+
+  <button type="submit">Send</button>
+</form>
+
     </section>
 
     <!-- FOOTER -->
@@ -68,4 +87,3 @@
 
     <!-- SCRIPT -->
     <script>
-
